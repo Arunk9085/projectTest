@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body background="colors.jpg">
+<form action="verify.php" method="POST">
+<!-- passing value using post-->
+<fieldset>
+ <legend><b>Login</b></legend>
+ <ol>
+  <li>
+   <label for="email">Email <font color="red">*</font></label>
+   <input type="email" id="email" name="email" placeholder="e.g. abc@example.com" title="Please enter a valid email" pattern=".+@gmail.com" required />
+   <p class="validation01">
+    <span class="invalid">Please enter a valid email address e.g. abc@example.com</span>
+   </p>
+  </li>
+<li>
+     <label for="password">Password <font color="red">*</font></label>
+     <input id="password" name="password" type="password" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers."  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required />
+     <p class="validation01">
+      <span class="invalid">Password must contain at least 6 characters, including UPPER/lowercase and numbers.</span>
+     </p>
+    </li>
+ </ol>
+</fieldset>
+<p>
+<input type="submit" value="Sign in"/>
+<input type="submit" value="Sign up" onclick="window.location.href='register.html'"/>
+</p>
+<p> Not Yet Register?<b> Sign Up</b> first </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body background="image.jpg">
+<form action="insert.php" method="POST">
+<!-- posting value to insert php file-->
+<fieldset>
+   <legend><b>Register </b></legend>
+   <ol>
+  <li><p>
+   <label for="firstname">First Name <font color="red">*</font></label>
+   <input type="text" id="firstname" name="firstname" placeholder="First Name" required />
+   <p>
+  </li>
+  <li>
+   <p>
+   <label for="lastname">Last Name <font color="red">*</font></label>
+   <input type="text" id="lastname" name="lastname" placeholder="Last Name" required />
+   </p>
+  </li> 
+   <li>
+   <label for="email">Email <font color="red">*</font></label>
+   <input type="email" id="email" name="email" placeholder="e.g. abc@example.com" title="Please enter a valid email" pattern=".+@gmail.com" required />
+   <p class="validation01">
+    <span class="invalid">Please enter a valid email address e.g. abc@example.com</span>
+   </p>
+  </li>
+<li>
+     <label for="password">Password <font color="red">*</font></label>
+     <input id="password" name="password" type="password" title=""Password must contain at least 6 characters, including UPPER/lowercase and numbers."  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  required />
+     <p class="validation01">
+      <span class="invalid">Password must contain at least 6 characters, including UPPER/lowercase and numbers.</span>
+     </p>
+    </li>
+    <li>
+     <label for="tel">Mobile <font color="red">*</font></label>
+    <input type="phone" name="mobilenumber" placeholder="Please enter a ten digit phone number" required />
+     <p class="validation01">
+      <span class="invalid">No spaces or brackets e.g. 9999999999</span>
+     </p>
+    </li>
+   </ol>
+     <p><b><font color="red">  * </font>  Mandatory </b></p>
+  </fieldset>
+<p>
+<input type="submit" value="Submit"/>
+</p>
+</form>
+</body>
+</html>
